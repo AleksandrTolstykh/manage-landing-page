@@ -1,0 +1,44 @@
+section {
+  @media screen and (min-width: 768px) {
+    background-image: url("../../assets/bg-tablet-pattern.svg");
+    background-position: bottom -400px left -400px;
+    background-repeat: no-repeat;
+  }
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  .column {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+h1 {
+  color: hsl(228, 39%, 23%);
+  font-size: 40px;
+  font-weight: 700;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+p {
+  color: hsl(227, 12%, 61%);
+  font-weight: 500;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+  }
+}

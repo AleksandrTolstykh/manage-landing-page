@@ -1,0 +1,17 @@
+<section>
+  <div class="container">
+    <div class="column">
+      <h1>What’s different about Manage?</h1>
+      <p>
+        Manage provides all the functionality your team needs, without
+        the complexity. Our software is tailor-made for modern digital
+        product teams.
+      </p>
+    </div>
+    <div class="column">
+      <div *ngFor="let feature of features">
+        <app-feature [number]="feature.number" [header]="feature.header" [content]="feature.content"></app-feature>
+      </div>
+    </div>
+  </div>
+</section>

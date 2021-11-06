@@ -1,0 +1,21 @@
+<section>
+  <mat-toolbar *ngIf="!mobile">
+    <img src="assets/logo.svg" alt="logo" />
+    <div>
+      <button mat-button>Pricing</button>
+      <button mat-button>Product</button>
+      <button mat-button>About Us</button>
+      <button mat-button>Careers</button>
+      <button mat-button>Community</button>
+    </div>
+    <app-get-started-button theme="orange"></app-get-started-button>
+  </mat-toolbar>
+  <mat-toolbar *ngIf="mobile">
+    <img src="assets/logo.svg" alt="logo" />
+    <button mat-button (click)="onClick($event)">
+      <img *ngIf="!showMenu" src="assets/icon-hamburger.svg" alt="hamburger" />
+      <img *ngIf="showMenu" src="assets/icon-close.svg" alt="close" />
+    </button>
+  </mat-toolbar>
+  <app-mobile-menu *ngIf="mobile && showMenu"></app-mobile-menu>
+</section>

@@ -1,0 +1,17 @@
+<section>
+  <h1>What they’ve said</h1>
+  <div class="container">
+    <div *ngIf="!mobile">
+      <app-testimonial [image]="testimonials[selectedItem].image" [name]="testimonials[selectedItem].name" [text]="testimonials[selectedItem].text"></app-testimonial>
+      <app-testimonial [image]="testimonials[nextItem].image" [name]="testimonials[nextItem].name" [text]="testimonials[nextItem].text"></app-testimonial>
+      <app-testimonial [image]="testimonials[lastItem].image" [name]="testimonials[lastItem].name" [text]="testimonials[lastItem].text"></app-testimonial>
+    </div>
+    <div *ngIf="mobile">
+      <app-testimonial [image]="testimonials[selectedItem].image" [name]="testimonials[selectedItem].name" [text]="testimonials[selectedItem].text"></app-testimonial>
+    </div>
+  </div>
+  <div class="selector">
+    <div *ngFor="let testimonial of testimonials; let i = index" [class]="i === selectedItem ? 'selected-item' : 'item'"></div>
+  </div>
+  <app-get-started-button theme="orange"></app-get-started-button>
+</section>

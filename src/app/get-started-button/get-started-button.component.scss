@@ -1,0 +1,18 @@
+.mat-button {
+  border-radius: 30px;
+  font-family: "Be Vietnam";
+  font-weight: 700;
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.orange {
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 100%);
+}
+
+.white {
+  background: hsl(0, 0%, 100%);
+  color: hsl(12, 88%, 59%);
+}

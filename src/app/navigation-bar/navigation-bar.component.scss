@@ -1,0 +1,27 @@
+.mat-toolbar {
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+div {
+  .mat-button {
+    color: hsl(228, 39%, 23%);
+    font-family: "Be Vietnam";
+    font-weight: 500;
+    &:hover {
+      opacity: 50%;
+    }
+  }
+}
+
+::ng-deep {
+  .mat-button-focus-overlay {
+    background-color: transparent;
+  }
+}

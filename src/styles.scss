@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("assets/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top -300px right -300px;
+  margin: 0;
+  font-family: "Be Vietnam";
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    background-position: top -400px right -400px;
+  }
+}
